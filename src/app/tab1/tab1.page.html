@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,71 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Calculadora</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="displaycalculator">
+          <ion-input type="number" value="" id="display"> </ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-row>
+      <ion-col class="coluna" size="12">
+        <ion-button class="btn" color="dark">%</ion-button>
+        <ion-button class="btn" color="dark">CE</ion-button>
+        <ion-button class="btn" color="dark">C</ion-button>
+        <ion-button class="btn" color="dark">
+          <ion-icon name="backspace-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="coluna" size="12">
+        <ion-button class="btn" color="dark">7</ion-button>
+        <ion-button class="btn" color="dark">8</ion-button>
+        <ion-button class="btn" color="dark">9</ion-button>
+        <ion-button class="btn" color="dark">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="coluna" size="12">
+        <ion-button class="btn" color="dark">4</ion-button>
+        <ion-button class="btn" color="dark">5</ion-button>
+        <ion-button class="btn" color="dark">6</ion-button>
+        <ion-button class="btn" color="dark">
+          <ion-icon name="remove-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="coluna" size="12">
+        <ion-button class="btn" color="dark">1</ion-button>
+        <ion-button class="btn" color="dark">2</ion-button>
+        <ion-button class="btn" color="dark">3</ion-button>
+        <ion-button class="btn" color="dark">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="coluna" size="12">
+        <ion-button class="btn" color="dark">,</ion-button>
+        <ion-button class="btn" color="dark">0</ion-button>
+        <ion-button class="btn" color="dark">/</ion-button>
+        <ion-button class="btn" color="dark">=</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
 </ion-content>
